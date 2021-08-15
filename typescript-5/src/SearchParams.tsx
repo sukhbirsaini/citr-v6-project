@@ -20,7 +20,7 @@ const SearchParams: FunctionComponent = () => {
 
   async function requestPets() {
     const res = await fetch(
-      `http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
+      `https://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
     );
     const json = (await res.json()) as PetAPIResponse;
 

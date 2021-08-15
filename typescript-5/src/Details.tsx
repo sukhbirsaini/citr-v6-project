@@ -21,7 +21,7 @@ class Details extends Component<RouteComponentProps<{ id: string }>> {
 
   async componentDidMount() {
     const res = await fetch(
-      `http://pets-v2.dev-apis.com/pets?id=${this.props.match.params.id}`
+      `https://pets-v2.dev-apis.com/pets?id=${this.props.match.params.id}`
     );
     const json = (await res.json()) as PetAPIResponse;
     this.setState(Object.assign({ loading: false }, json.pets[0]));
@@ -29,7 +29,7 @@ class Details extends Component<RouteComponentProps<{ id: string }>> {
 
   toggleModal = () => this.setState({ showModal: !this.state.showModal });
 
-  adopt = () => (window.location.href = "http://bit.ly/pet-adopt");
+  adopt = () => (window.location.href = "https://bit.ly/pet-adopt");
 
   render() {
     if (this.state.loading) {

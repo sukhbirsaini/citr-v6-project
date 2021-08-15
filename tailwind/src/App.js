@@ -13,7 +13,7 @@ const App = () => {
         className="p-0 m-0"
         style={{
           background:
-            "url(http://pets-images.dev-apis.com/pets/wallpaperA.jpg)",
+            "url(https://pets-images.dev-apis.com/pets/wallpaperA.jpg)",
         }}
       >
         <Router>
